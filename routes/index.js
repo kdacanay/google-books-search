@@ -3,11 +3,11 @@ const router = express.Router();
 
 const booksController = require('../controllers/booksController');
 
-router.route('/api/books')
+router.route('/books')
   .get(booksController.findAll)
   .post(booksController.save);
 
-router.route('api/books/:id')
+router.route('/books/:id')
   .get(booksController.findById)
   .put(booksController.update)
   .delete(booksController.remove)
