@@ -22,7 +22,8 @@ app.get("*", (req, res) => {
 });
 
 //set up mongoose connection w/googlebooks
-mongoose.connect(process.env.MONGODB_URI || '"mongodb://localhost/googlebooks"')
+mongoose.set('useUnifiedTopology', true);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true })
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
