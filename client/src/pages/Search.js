@@ -19,6 +19,16 @@ class Search extends Component {
     this.setState({ [name]: value })
   };
 
+  // componentDidMount() {
+  //   this.loadBooks();
+  // }
+
+  // loadBooks = () => {
+  //   API.getBooks()
+  //     .then(res => this.setState({ books: res.data }))
+  //     .catch(err => console.log(err));
+  // };
+
   handleFormSubmit = event => {
     // When the form is submitted, prevent its default behavior, get book update the books state
     event.preventDefault();

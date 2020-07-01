@@ -1,7 +1,7 @@
-div.thumbnail {
+div.image {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  /* width: 100%; */
+  width: 100%;
   padding-top: 100%;
 }
