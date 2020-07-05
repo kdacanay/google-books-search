@@ -1,4 +1,5 @@
-.search {
+#search-btn-id {
   float: right;
   margin: 10px 0;
+  background-color: #377f7c;
 }

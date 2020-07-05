@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export const NoMatch = () => {
-  return (
-    <div>
+export class NoMatch extends Component {
+  render() {
+    return (
+      <div>
 
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
-export default NoMatch;
+export default NoMatch

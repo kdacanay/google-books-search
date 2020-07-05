@@ -1,3 +1,9 @@
 .view {
-  margin-right: 3px
+  margin-right: 3px;
+  background-color: #675b70;
+  color: white;
+}
+
+.save {
+  background-color: #981609;
 }
