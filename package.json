@@ -24,6 +24,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.9.20",
     "react-dom": "^16.13.1",
+    "socket.io": "^2.3.0",
     "webpack-manifest-plugin": "^2.2.0"
   }
 }

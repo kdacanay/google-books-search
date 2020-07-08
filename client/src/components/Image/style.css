@@ -4,4 +4,14 @@ div.image {
   background-position: center;
   width: 100%;
   padding-top: 100%;
+  width: 100px;
+  height: 150px;
+  transition-property: all;
+  transition: transform 1s;
+  transition-duration: 1s;
+  /* transform-style: preserve-3d; */
+}
+
+div.image:hover {
+  transform: rotateY(180deg);
 }

@@ -6,11 +6,11 @@ import API from "../../utils/API";
 import DeleteBtn from "../DeleteBtn";
 import "./style.css";
 
-export function BookList({ children }) {
+const BookList = ({ children }) => {
   return <ul className="list-group">{children}</ul>;
 };
 
-export function BookListItem(props) {
+const BookListItem = (props) => {
 
   const handleSaveBtn = event => {
 
@@ -45,7 +45,7 @@ export function BookListItem(props) {
       <Container>
         <Row>
           <Col size="xs-4 sm-2">
-            <Image src={props.image} />
+            <a href={props.link} ><Image src={props.image} /></a>
           </Col>
           <Col size="xs-8 sm-10">
             <h3>{props.title}</h3>
@@ -57,24 +57,23 @@ export function BookListItem(props) {
             </p>
             <a
               rel="noreferrer noopener"
-              className="btn btn-lg btn input-lg view"
+              className="btn btn-lg btn input-lg"
               target="_blank"
               href={props.link}
             >
               View
                         </a>
-            {/* if there is an object id render the SaveBtn component else render the DeleteBtn component */}
             {!props.id ?
               <SaveBtn
-                type="success"
-                className="input-lg save"
+                // type="success"
+                className="input-lg"
                 onClick={handleSaveBtn}
               >
                 Save
                             </SaveBtn>
               :
               <DeleteBtn
-                type="danger"
+                // type="danger"
                 className="input-lg"
                 onClick={handleDeleteBtn}
               >
@@ -87,3 +86,6 @@ export function BookListItem(props) {
     </li>
   );
 };
+
+
+export { BookList, BookListItem };

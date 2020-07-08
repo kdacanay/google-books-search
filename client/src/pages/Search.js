@@ -3,6 +3,7 @@ import API from "../utils/API";
 import { Container, Row, Col } from "../components/Grid";
 import { BookList, BookListItem } from "../components/List";
 import { Input, SearchButton } from "../components/Form";
+// import { SaveBtn } from "../components/SaveBtn";
 
 class Search extends Component {
 
@@ -52,7 +53,6 @@ class Search extends Component {
                     <Col size="xs-12 sm-12">
                       <SearchButton
                         onClick={this.handleFormSubmit}
-                        type="success"
                         className="input-lg"
                       >
                         Search

@@ -22,9 +22,9 @@ class Save extends Component {
       .then(res => {
         this.setState({ savedBooks: res.data }, function () {
           console.log(this.state.savedBooks);
-        })
+        });
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
   };
 
   render() {
