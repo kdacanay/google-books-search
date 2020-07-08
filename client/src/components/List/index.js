@@ -7,11 +7,11 @@ import DeleteBtn from "../DeleteBtn";
 import "./style.css";
 import { Button } from 'react-bootstrap';
 
-const BookList = ({ children }) => {
+export function BookList({ children }) {
   return <ul className="list-group">{children}</ul>;
 };
 
-const BookListItem = (props) => {
+export function BookListItem(props) {
 
   const handleSaveBtn = event => {
 
@@ -88,5 +88,3 @@ const BookListItem = (props) => {
   );
 };
 
-
-export { BookList, BookListItem };
