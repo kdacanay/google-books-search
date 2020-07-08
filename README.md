@@ -1,3 +1,9 @@
+# Google Books Search #
+
+<img src='/client/public/appgif.gif' width=700 />
+
+Use the app on https://peaceful-taiga-22363.herokuapp.com/
+
 # Create React Express App
 
 ## About This Boilerplate
