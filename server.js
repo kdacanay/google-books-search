@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build/index.html"));
+  app.use(express.static("client/build"));
 }
 // //set up socket.io
 // var server = app.listen(4000, function () {

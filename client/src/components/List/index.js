@@ -5,6 +5,7 @@ import SaveBtn from "../SaveBtn";
 import API from "../../utils/API";
 import DeleteBtn from "../DeleteBtn";
 import "./style.css";
+import { Button } from 'react-bootstrap';
 
 const BookList = ({ children }) => {
   return <ul className="list-group">{children}</ul>;
@@ -55,17 +56,17 @@ const BookListItem = (props) => {
             <p>
               {props.description}
             </p>
-            <a
+            <Button
               rel="noreferrer noopener"
               className="btn btn-lg btn input-lg"
               target="_blank"
               href={props.link}
             >
               View
-                        </a>
+                        </Button>
             {!props.id ?
               <SaveBtn
-                // type="success"
+                type="success"
                 className="input-lg"
                 onClick={handleSaveBtn}
               >
@@ -73,7 +74,7 @@ const BookListItem = (props) => {
                             </SaveBtn>
               :
               <DeleteBtn
-                // type="danger"
+                type="danger"
                 className="input-lg"
                 onClick={handleDeleteBtn}
               >
