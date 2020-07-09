@@ -1,5 +1,20 @@
 nav.navbar {
   margin-bottom: 0;
   box-shadow: 3px 5px 3px #676767;
-  background-color: #981609;
+  background-color: #ea4335;
+  text-align: left;
+}
+
+#brand {
+  font-size: 22px;
+}
+
+#searchBrand {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+#savedBrand {
+  font-size: 16px;
+  padding-top: 8px;
 }

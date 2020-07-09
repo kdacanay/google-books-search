@@ -26,3 +26,9 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-color: #ececec;
+}
+.btn {
+  box-shadow: 3px 5px 3px #676767;
+}

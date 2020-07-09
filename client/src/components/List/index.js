@@ -42,49 +42,52 @@ export function BookListItem(props) {
   };
 
   return (
-    <li className="list-group-item" key={props.id}>
-      <Container>
-        <Row>
-          <Col size="xs-4 sm-2">
-            <a href={props.link} ><Image src={props.image} /></a>
-          </Col>
-          <Col size="xs-8 sm-10">
-            <h3>{props.title}</h3>
-            <p>
-              Written By {[props.authors].flat().join(", ")}
-            </p>
-            <p>
-              {props.description}
-            </p>
-            <Button
-              rel="noreferrer noopener"
-              className="btn btn-lg btn input-lg"
-              target="_blank"
-              href={props.link}
-            >
-              View
+    <div>
+      <br />
+      <li className="list-group-item" key={props.id}>
+        <Container>
+          <Row>
+            <Col size="xs-4 sm-2">
+              <a href={props.link} ><Image src={props.image} /></a>
+            </Col>
+            <Col size="xs-8 sm-10">
+              <h3>{props.title}</h3>
+              <p>
+                Written By {[props.authors].flat().join(", ")}
+              </p>
+              <p>
+                {props.description}
+              </p>
+              <Button
+                rel="noreferrer noopener"
+                className="btn btn-lg btn input-lg"
+                target="_blank"
+                href={props.link}
+              >
+                View
                         </Button>
-            {!props.id ?
-              <SaveBtn
-                type="success"
-                className="input-lg"
-                onClick={handleSaveBtn}
-              >
-                Save
+              {!props.id ?
+                <SaveBtn
+                  type="success"
+                  className="input-lg"
+                  onClick={handleSaveBtn}
+                >
+                  Save
                             </SaveBtn>
-              :
-              <DeleteBtn
-                type="danger"
-                className="input-lg"
-                onClick={handleDeleteBtn}
-              >
-                Delete
+                :
+                <DeleteBtn
+                  type="danger"
+                  className="input-lg"
+                  onClick={handleDeleteBtn}
+                >
+                  Delete
                             </DeleteBtn>
-            }
-          </Col>
-        </Row>
-      </Container>
-    </li>
+              }
+            </Col>
+          </Row>
+        </Container>
+      </li>
+    </div>
   );
 };
 

@@ -4,3 +4,6 @@
   background-color: #4285f4;
   color: white;
 }
+input {
+  box-shadow: 3px 5px 3px #676767;
+}
